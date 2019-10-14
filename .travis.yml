@@ -6,7 +6,7 @@ before_install:
 script:
         - docker run jeromevaleska/docker-react npm run test -- --watchAll=false
 deploy:
-        provider:elasticbeanstalk
+        provider: elasticbeanstalk
         region: "us-east-1"
         app: "docker"
         env: "Docker-env"
